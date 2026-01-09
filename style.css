@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(32,123,22);
+    background: linear-gradient(90deg, rgba(32,123,22,1) 0%, rgba(170,186,22,1) 44%, rgba(195,71,30,1) 100%);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.box-container 
+{
+    display: flex;
+    width: 40%;
+    background-color: #e7f7c3;
+    gap: 40px;  
+    position: relative;
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 2px 2px 12px;
+}
+.Icon
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+.right_box
+{
+    position: relative;
+    top: 5px;
+    left: 0px;
+    /* height: 316px; */
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    width: 50%;
+}
+.left_box
+{
+    position: relative;
+    background-color: white;
+    top: auto;
+    left: -36px;
+    width: 222px;
+    padding: 15px;
+    box-shadow: 4px 12px 30px;
+}
+.container 
+{
+    
+    padding: 12px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button
+{
+    padding: 12px;
+    background-color: #d33d04;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.rate{
+    font-size: 40px;
+    color: crimson;
+}
+.image
+{
+    position: relative;
+    right: 50px;
+
+}
+.fns
+{
+    display: flex;
+        /* grid-template-columns: auto auto auto auto; */
+        justify-content: center;
+        /* align-content: center; */
+        margin-left: 96px;
+}
+@media only screen and (min-width: 600px) and (max-width:870px) {
+    .box-container 
+    {
+    flex-direction: row;
+    width: 100%;
+    flex-flow: wrap
+    } 
+    .right_box  
+    {
+        /* flex-grow: 1; */
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:600px) {
+    .box-container 
+    {
+    flex-direction: column;
+    width: 100%;
+    position: unset;
+    gap: unset;
+    } 
+    .right_box  
+    {
+        /* position: unset; */
+        width: auto;
+    }
+    .left_box 
+    {
+        width: unset;
+        /* right: 16px; */
+        left: 0px;
+        top: -57px;
+    }
+    .image
+    {
+        right:70px;
+    }
+}
